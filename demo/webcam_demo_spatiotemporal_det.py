@@ -747,7 +747,7 @@ class DefaultVisualizer(BaseVisualizer):
                 if k >= self.max_labels_per_bbox:
                     break
                 text = f'{self.abbrev(label)}: {score:.4f}'
-                location = (15, 58 + k * 58)
+                location = (st[0], -10 - k * 58 + st[1])
                 cv2.putText(frame, text, location,
                     cv2.FONT_HERSHEY_SIMPLEX, 2, (0, 0, 0), 10, cv2.LINE_AA)
                 cv2.putText(frame, text, location,
