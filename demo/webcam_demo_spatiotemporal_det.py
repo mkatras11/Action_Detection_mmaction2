@@ -110,12 +110,12 @@ def parse_args():
         help='Image width for human detector and draw frames.')
     parser.add_argument(
         '--predict-stepsize',
-        default=20,
+        default=30,
         type=int,
         help='give out a prediction per n frames')
     parser.add_argument(
         '--clip-vis-length',
-        default=20,
+        default=30,
         type=int,
         help='Number of draw frames per clip.')
     parser.add_argument(
@@ -747,13 +747,14 @@ class DefaultVisualizer(BaseVisualizer):
             for k, (label, score) in enumerate(pred):
                 if k >= self.max_labels_per_bbox:
                     break
-                text = f'{self.abbrev(label)}: {score:.4f}'
-                location = (st[0], -10 - k * 58 + st[1])
-                cv2.putText(frame, text, location,
-                    cv2.FONT_HERSHEY_SIMPLEX, 2, (0, 0, 0), 10, cv2.LINE_AA)
-                cv2.putText(frame, text, location,
-                    cv2.FONT_HERSHEY_SIMPLEX, 2, (255, 255, 255), 2,
-                    cv2.LINE_AA)
+                if self.abbrev(label) ==  'stand' or self.abbrev(label) == 'walk' or self.abbrev(label) == 'carry/hold ...':
+                    text = f'{self.abbrev(label)}: {score:.4f}'
+                    location = (5 +st[0],58 + k * 58 + st[1])
+                    cv2.putText(frame, text, location,
+                        cv2.FONT_HERSHEY_SIMPLEX, 2, (0, 0, 0), 10, cv2.LINE_AA)
+                    cv2.putText(frame, text, location,
+                        cv2.FONT_HERSHEY_SIMPLEX, 2, (255, 255, 255), 2,
+                        cv2.LINE_AA)
         return frame
 
 
