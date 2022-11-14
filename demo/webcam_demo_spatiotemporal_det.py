@@ -714,7 +714,7 @@ class DefaultVisualizer(BaseVisualizer):
 
     def __init__(
             self,
-            max_labels_per_bbox=5,
+            max_labels_per_bbox=3,
             plate='03045e-023e8a-0077b6-0096c7-00b4d8-48cae4',
             text_fontface=cv2.FONT_HERSHEY_DUPLEX,
             text_fontscale=2,
