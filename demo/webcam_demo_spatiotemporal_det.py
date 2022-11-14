@@ -85,7 +85,7 @@ def parse_args():
         '--device', type=str, default='cuda:0', help='CPU/CUDA device option')
     parser.add_argument(
         '--output-fps',
-        default=50,
+        default= 50,
         type=int,
         help='the fps of demo video output')
     parser.add_argument(
@@ -376,8 +376,8 @@ class ClipHelper:
         assert self.cap.isOpened()
 
         # stdet input preprocessing params
-        h = int(self.cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
-        w = int(self.cap.get(cv2.CAP_PROP_FRAME_WIDTH))
+        h = int(self.cap.set(cv2.CAP_PROP_FRAME_HEIGHT, display_height))
+        w = int(self.cap.set(cv2.CAP_PROP_FRAME_WIDTH, display_width))
         self.stdet_input_size = mmcv.rescale_size(
             (w, h), (stdet_input_shortside, np.Inf))
         img_norm_cfg = config['img_norm_cfg']
@@ -472,6 +472,7 @@ class ClipHelper:
                 read_frame_cnt = self.window_size - len(frames)
                 while was_read and len(frames) < self.window_size:
                     was_read, frame = self.cap.read()
+                    frame = cv2.flip(frame, 1)
                     if not self.webcam:
                         # Reading frames too fast may lead to unexpected
                         # performance degradation. If you have enough
