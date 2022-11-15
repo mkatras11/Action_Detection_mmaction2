@@ -85,12 +85,12 @@ def parse_args():
         '--device', type=str, default='cuda:0', help='CPU/CUDA device option')
     parser.add_argument(
         '--output-fps',
-        default= 50,
+        default= 30,
         type=int,
         help='the fps of demo video output')
     parser.add_argument(
         '--out-filename',
-        default=None,
+        default='demo/webcam_demo.avi',
         type=str,
         help='the filename of output video')
     parser.add_argument(
