@@ -1,12 +1,12 @@
 # Spatiotemporal Action Detection
 
-### Introduction
+## Introduction
 Detect human actions both in spatial and temporal dimensions using MMAction2.
 
 MMAction2 is an open-source toolbox for video understanding based on PyTorch.
 It is a part of the [OpenMMLab](https://openmmlab.com/) project.
 
-### Installation
+## Installation
 
 This project depends on [PyTorch](https://pytorch.org/), [MMCV](https://github.com/open-mmlab/mmcv), and [MMDetection](https://github.com/open-mmlab/mmdetection).
 Below are some quick steps for installation:
@@ -22,7 +22,7 @@ git clone https://github.com/mkatras11/Action_Detection_mmaction2.git
 pip install -r requirements.txt
 ```
 
-### Supported Methods
+## Supported Methods
 
 <table style="margin-left:auto;margin-right:auto;font-size:1.3vw;padding:3px 5px;text-align:center;vertical-align:center;">
   <tr>
@@ -38,7 +38,7 @@ pip install -r requirements.txt
   <tr>
 </table>
 
-### Supported Datasets
+## Supported Datasets
 
 <table style="margin-left:auto;margin-right:auto;font-size:1.3vw;padding:3px 5px;text-align:center;vertical-align:center;">
   <tr>
@@ -53,6 +53,6 @@ pip install -r requirements.txt
   <tr>
 </table>
 
-### References
+## References
 * [MMAction2](https://github.com/open-mmlab/mmaction2)
 
