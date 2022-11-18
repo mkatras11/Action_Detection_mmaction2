@@ -31,7 +31,7 @@ pip install -r requirements.txt
   <tr>
     <td><a href="https://github.com/mkatras11/Action_Detection_mmaction2/tree/main/configs/detection/acrn/README.md">ACRN</a> (ECCV'2018)</td>
     <td><a href="https://github.com/mkatras11/Action_Detection_mmaction2/tree/main/configs/detection/ava/README.md">SlowOnly+Fast R-CNN</a> (ICCV'2019)</td>
-    <td><a href="https:https://github.com/mkatras11/Action_Detection_mmaction2/tree/main/configs/detection/ava/README.md">SlowFast+Fast R-CNN</a> (ICCV'2019)</td>
+    <td><a href="https://github.com/mkatras11/Action_Detection_mmaction2/tree/main/configs/detection/ava/README.md">SlowFast+Fast R-CNN</a> (ICCV'2019)</td>
     <td><a href="https://github.com/mkatras11/Action_Detection_mmaction2/tree/main/configs/detection/lfb/README.md">LFB</a> (CVPR'2019)</td>
     <td></td>
   </tr>
