@@ -1,115 +1,25 @@
-<div align="center">
-  <img src="https://github.com/open-mmlab/mmaction2/raw/master/resources/mmaction2_logo.png" width="600"/>
-  <div>&nbsp;</div>
-  <div align="center">
-    <b><font size="5">OpenMMLab website</font></b>
-    <sup>
-      <a href="https://openmmlab.com">
-        <i><font size="4">HOT</font></i>
-      </a>
-    </sup>
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <b><font size="5">OpenMMLab platform</font></b>
-    <sup>
-      <a href="https://platform.openmmlab.com">
-        <i><font size="4">TRY IT OUT</font></i>
-      </a>
-    </sup>
-  </div>
+# Spatiotemporal Action Detection
 
-[![Documentation](https://readthedocs.org/projects/mmaction2/badge/?version=latest)](https://mmaction2.readthedocs.io/en/latest/)
-[![actions](https://github.com/open-mmlab/mmaction2/workflows/build/badge.svg)](https://github.com/open-mmlab/mmaction2/actions)
-[![codecov](https://codecov.io/gh/open-mmlab/mmaction2/branch/master/graph/badge.svg)](https://codecov.io/gh/open-mmlab/mmaction2)
-[![PyPI](https://img.shields.io/pypi/v/mmaction2)](https://pypi.org/project/mmaction2/)
-[![LICENSE](https://img.shields.io/github/license/open-mmlab/mmaction2.svg)](https://github.com/open-mmlab/mmaction2/blob/master/LICENSE)
-[![Average time to resolve an issue](https://isitmaintained.com/badge/resolution/open-mmlab/mmaction2.svg)](https://github.com/open-mmlab/mmaction2/issues)
-[![Percentage of issues still open](https://isitmaintained.com/badge/open/open-mmlab/mmaction2.svg)](https://github.com/open-mmlab/mmaction2/issues)
-
-[📘Documentation](https://mmaction2.readthedocs.io/en/latest/) |
-[🛠️Installation](https://mmaction2.readthedocs.io/en/latest/install.html) |
-[👀Model Zoo](https://mmaction2.readthedocs.io/en/latest/modelzoo.html) |
-[🆕Update News](https://mmaction2.readthedocs.io/en/latest/changelog.html) |
-[🚀Ongoing Projects](https://github.com/open-mmlab/mmaction2/projects) |
-[🤔Reporting Issues](https://github.com/open-mmlab/mmaction2/issues/new/choose)
-
-</div>
-
-English | [简体中文](/README_zh-CN.md)
-
-## Introduction
+### Introduction
+Detect human actions both in spatial and temporal dimensions using MMAction2.
 
 MMAction2 is an open-source toolbox for video understanding based on PyTorch.
 It is a part of the [OpenMMLab](https://openmmlab.com/) project.
-
-The master branch works with **PyTorch 1.5+**.
-
-<div align="center">
-  <div style="float:left;margin-right:10px;">
-  <img src="https://github.com/open-mmlab/mmaction2/raw/master/resources/mmaction2_overview.gif" width="380px"><br>
-    <p style="font-size:1.5vw;">Action Recognition Results on Kinetics-400</p>
-  </div>
-  <div style="float:right;margin-right:0px;">
-  <img src="https://user-images.githubusercontent.com/34324155/123989146-2ecae680-d9fb-11eb-916b-b9db5563a9e5.gif" width="380px"><br>
-    <p style="font-size:1.5vw;">Skeleton-based Action Recognition Results on NTU-RGB+D-120</p>
-  </div>
-</div>
-<div align="center">
-  <img src="https://user-images.githubusercontent.com/30782254/155710881-bb26863e-fcb4-458e-b0c4-33cd79f96901.gif" width="580px"/><br>
-    <p style="font-size:1.5vw;">Skeleton-based Spatio-Temporal Action Detection and Action Recognition Results on Kinetics-400</p>
-</div>
-<div align="center">
-  <img src="https://github.com/open-mmlab/mmaction2/raw/master/resources/spatio-temporal-det.gif" width="800px"/><br>
-    <p style="font-size:1.5vw;">Spatio-Temporal Action Detection Results on AVA-2.1</p>
-</div>
-
-## Major Features
-
-- **Modular design**: We decompose a video understanding framework into different components. One can easily construct a customized video understanding framework by combining different modules.
-
-- **Support four major video understanding tasks**: MMAction2 implements various algorithms for multiple video understanding tasks, including action recognition, action localization, spatio-temporal action detection, and skeleton-based action detection. We support **27** different algorithms and **20** different datasets for the four major tasks.
-
-- **Well tested and documented**: We provide detailed documentation and API reference, as well as unit tests.
-
-## What's New
-
-### 🌟 Preview of 1.x version
-
-A brand new version of **MMAction2 v1.0.0rc0** was released in 01/09/2022:
-
-- Unified interfaces of all components based on [MMEngine](https://github.com/open-mmlab/mmengine).
-- Faster training and testing speed with complete support of mixed precision training.
-- More flexible [architecture](https://mmaction2.readthedocs.io/en/1.x).
-
-Find more new features in [1.x branch](https://github.com/open-mmlab/mmaction2/tree/1.x). Issues and PRs are welcome!
-
-### 💎 Stable version
-
-- (2022-03-04) We support **Multigrid** on Kinetics400, achieve 76.07% Top-1 accuracy and accelerate training speed.
-- (2021-11-24) We support **2s-AGCN** on NTU60 XSub, achieve 86.06% Top-1 accuracy on joint stream and 86.89% Top-1 accuracy on bone stream respectively.
-- (2021-10-29) We provide a demo for skeleton-based and rgb-based spatio-temporal detection and action recognition (demo/demo_video_structuralize.py).
-- (2021-10-26) We train and test **ST-GCN** on NTU60 with 3D keypoint annotations, achieve 84.61% Top-1 accuracy (higher than 81.5% in the [paper](https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/viewPaper/17135)).
-- (2021-10-25) We provide a script(tools/data/skeleton/gen_ntu_rgbd_raw.py) to convert the NTU60 and NTU120 3D raw skeleton data to our format.
-- (2021-10-25) We provide a [guide](https://github.com/open-mmlab/mmaction2/blob/master/configs/skeleton/posec3d/custom_dataset_training.md) on how to train PoseC3D with custom datasets, [bit-scientist](https://github.com/bit-scientist) authored this PR!
-- (2021-10-16) We support **PoseC3D** on UCF101 and HMDB51, achieves 87.0% and 69.3% Top-1 accuracy with 2D skeletons only. Pre-extracted 2D skeletons are also available.
-
-**Release**: v0.24.0 was released in 05/05/2022. Please refer to [changelog.md](docs/changelog.md) for details and release history.
 
 ## Installation
 
 MMAction2 depends on [PyTorch](https://pytorch.org/), [MMCV](https://github.com/open-mmlab/mmcv), [MMDetection](https://github.com/open-mmlab/mmdetection) (optional), and [MMPose](https://github.com/open-mmlab/mmdetection)(optional).
 Below are quick steps for installation.
-Please refer to [install.md](docs/install.md) for more detailed instruction.
 
 ```shell
-conda create -n open-mmlab python=3.8 pytorch=1.10 cudatoolkit=11.3 torchvision -c pytorch -y
-conda activate open-mmlab
+conda create -n st_action_det python=3.8 
+conda activate st_action_det
+pip install torch==1.9.0+cu111 torchvision==0.10.0+cu111 -f https://download.pytorch.org/whl/torch_stable.html
 pip3 install openmim
 mim install mmcv-full
-mim install mmdet  # optional
-mim install mmpose  # optional
-git clone https://github.com/open-mmlab/mmaction2.git
-cd mmaction2
-pip3 install -e .
+mim install mmdet 
+git clone https://github.com/mkatras11/Action_Detection_mmaction2.git
+pip install -r requirements.txt
 ```
 
 ## Get Started
