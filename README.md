@@ -38,16 +38,14 @@ pip install -r requirements.txt
   <tr>
 </table>
 
-## Supported Datasets
+## Supported Dataset
 
 <table style="margin-left:auto;margin-right:auto;font-size:1.3vw;padding:3px 5px;text-align:center;vertical-align:center;">
   <tr>
     <td colspan="4" style="font-weight:bold;">Spatio-Temporal Action Detection</td>
   </tr>
   <tr>
-    <td><a href="https://github.com/open-mmlab/mmaction2/blob/master/tools/data/ucf101_24/README.md">UCF101-24</a> (<a href="http://www.thumos.info/download.html">Homepage</a>) (CRCV-IR-12-01)</td>
-    <td><a href="https://github.com/open-mmlab/mmaction2/blob/master/tools/data/jhmdb/README.md">JHMDB</a> (<a href="http://jhmdb.is.tue.mpg.de/">Homepage</a>) (ICCV'2015)</td>
-    <td><a href="https://github.com/open-mmlab/mmaction2/blob/master/tools/data/ava/README.md">AVA</a> (<a href="https://research.google.com/ava/index.html">Homepage</a>) (CVPR'2018)</td>
+    <td> AVA(<a href="https://research.google.com/ava/index.html">Homepage</a>) (CVPR'2018)</td>
     <td></td>
   </tr>
   <tr>
