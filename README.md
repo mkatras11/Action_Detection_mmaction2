@@ -40,19 +40,6 @@ pip install -r requirements.txt
   </tr>
   <tr>
     <td> AVA(<a href="https://research.google.com/ava/index.html">Homepage</a>) (CVPR'2018)</td>
-    <td></td>
-  </tr>
-  <tr>
-</table>
-
-
-<table style="margin-left:auto;margin-right:auto;font-size:1.3vw;padding:3px 5px;text-align:center;vertical-align:center;">
-  <tr>
-    <td colspan="4" style="font-weight:bold;">Spatio-Temporal Action Detection</td>
-  </tr>
-  <tr>
-    <td> AVA(<a href="https://research.google.com/ava/index.html">Homepage</a>) (CVPR'2018)</td>
-    <td></td>
   </tr>
   <tr>
 </table>
