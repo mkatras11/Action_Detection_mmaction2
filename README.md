@@ -53,6 +53,6 @@ pip install -r requirements.txt
   <tr>
 </table>
 
-## References
+# References
 * [MMAction2](https://github.com/open-mmlab/mmaction2)
 
