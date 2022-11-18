@@ -22,11 +22,11 @@ git clone https://github.com/mkatras11/Action_Detection_mmaction2.git
 pip install -r requirements.txt
 ```
 
-## Supported Methods
+## Methods and Datasets
 
 <table style="margin-left:auto;margin-right:auto;font-size:1.3vw;padding:3px 5px;text-align:center;vertical-align:center;">
   <tr>
-    <td colspan="5" style="font-weight:bold;">Spatio-Temporal Action Detection</td>
+    <td colspan="5" style="font-weight:bold;">Supported Methods</td>
   </tr>
   <tr>
     <td><a href="https://github.com/mkatras11/Action_Detection_mmaction2/tree/main/configs/detection/acrn/README.md">ACRN</a> (ECCV'2018)</td>
@@ -36,9 +36,15 @@ pip install -r requirements.txt
     <td></td>
   </tr>
   <tr>
+    <td colspan="4" style="font-weight:bold;">Supported Datasets</td>
+  </tr>
+  <tr>
+    <td> AVA(<a href="https://research.google.com/ava/index.html">Homepage</a>) (CVPR'2018)</td>
+    <td></td>
+  </tr>
+  <tr>
 </table>
 
-## Supported Dataset
 
 <table style="margin-left:auto;margin-right:auto;font-size:1.3vw;padding:3px 5px;text-align:center;vertical-align:center;">
   <tr>
