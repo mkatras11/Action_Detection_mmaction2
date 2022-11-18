@@ -6,10 +6,10 @@ Detect human actions both in spatial and temporal dimensions using MMAction2.
 MMAction2 is an open-source toolbox for video understanding based on PyTorch.
 It is a part of the [OpenMMLab](https://openmmlab.com/) project.
 
-## Installation
+### Installation
 
-MMAction2 depends on [PyTorch](https://pytorch.org/), [MMCV](https://github.com/open-mmlab/mmcv), [MMDetection](https://github.com/open-mmlab/mmdetection) (optional), and [MMPose](https://github.com/open-mmlab/mmdetection)(optional).
-Below are quick steps for installation.
+This project depends on [PyTorch](https://pytorch.org/), [MMCV](https://github.com/open-mmlab/mmcv), and [MMDetection](https://github.com/open-mmlab/mmdetection).
+Below are some quick steps for installation:
 
 ```shell
 conda create -n st_action_det python=3.8 
@@ -21,21 +21,6 @@ mim install mmdet
 git clone https://github.com/mkatras11/Action_Detection_mmaction2.git
 pip install -r requirements.txt
 ```
-
-## Get Started
-
-Please see [getting_started.md](docs/getting_started.md) for the basic usage of MMAction2.
-There are also tutorials:
-
-- [learn about configs](docs/tutorials/1_config.md)
-- [finetuning models](docs/tutorials/2_finetune.md)
-- [adding new dataset](docs/tutorials/3_new_dataset.md)
-- [designing data pipeline](docs/tutorials/4_data_pipeline.md)
-- [adding new modules](docs/tutorials/5_new_modules.md)
-- [exporting model to onnx](docs/tutorials/6_export_model.md)
-- [customizing runtime settings](docs/tutorials/7_customize_runtime.md)
-
-A Colab tutorial is also provided. You may preview the notebook [here](demo/mmaction2_tutorial.ipynb) or directly [run](https://colab.research.google.com/github/open-mmlab/mmaction2/blob/master/demo/mmaction2_tutorial.ipynb) on Colab.
 
 ## Supported Methods
 
@@ -170,40 +155,7 @@ If you have any feature requests, please feel free to leave a comment in [Issues
 
 Datasets marked with * are not fully supported yet, but related dataset preparation steps are provided. A summary can be found on the [**Supported Datasets**](https://mmaction2.readthedocs.io/en/latest/supported_datasets.html) page.
 
-## Benchmark
-
-To demonstrate the efficacy and efficiency of our framework, we compare MMAction2 with some other popular frameworks and official releases in terms of speed. Details can be found in [benchmark](docs/benchmark.md).
-
-## Data Preparation
-
-Please refer to [data_preparation.md](docs/data_preparation.md) for a general knowledge of data preparation.
-The supported datasets are listed in [supported_datasets.md](docs/supported_datasets.md)
-
-## FAQ
-
-Please refer to [FAQ](docs/faq.md) for frequently asked questions.
-
-## Projects built on MMAction2
-
-Currently, there are many research works and projects built on MMAction2 by users from community, such as:
-
-- Video Swin Transformer. [\[paper\]](https://arxiv.org/abs/2106.13230)[\[github\]](https://github.com/SwinTransformer/Video-Swin-Transformer)
-- Evidential Deep Learning for Open Set Action Recognition, ICCV 2021 **Oral**. [\[paper\]](https://arxiv.org/abs/2107.10161)[\[github\]](https://github.com/Cogito2012/DEAR)
-- Rethinking Self-supervised Correspondence Learning: A Video Frame-level Similarity Perspective, ICCV 2021 **Oral**. [\[paper\]](https://arxiv.org/abs/2103.17263)[\[github\]](https://github.com/xvjiarui/VFS)
-
-etc., check [projects.md](docs/projects.md) to see all related projects.
-
-## Contributing
-
-We appreciate all contributions to improve MMAction2. Please refer to [CONTRIBUTING.md](https://github.com/open-mmlab/mmcv/blob/master/CONTRIBUTING.md) in MMCV for more details about the contributing guideline.
-
-## Acknowledgement
-
-MMAction2 is an open-source project that is contributed by researchers and engineers from various colleges and companies.
-We appreciate all the contributors who implement their methods or add new features and users who give valuable feedback.
-We wish that the toolbox and benchmark could serve the growing research community by providing a flexible toolkit to reimplement existing methods and develop their new models.
-
-## Citation
+### References
 
 If you find this project useful in your research, please consider cite:
 
@@ -216,28 +168,3 @@ If you find this project useful in your research, please consider cite:
 }
 ```
 
-## License
-
-This project is released under the [Apache 2.0 license](LICENSE).
-
-## Projects in OpenMMLab
-
-- [MIM](https://github.com/open-mmlab/mim): MIM installs OpenMMLab packages.
-- [MMClassification](https://github.com/open-mmlab/mmclassification): OpenMMLab image classification toolbox and benchmark.
-- [MMDetection](https://github.com/open-mmlab/mmdetection): OpenMMLab detection toolbox and benchmark.
-- [MMDetection3D](https://github.com/open-mmlab/mmdetection3d): OpenMMLab's next-generation platform for general 3D object detection.
-- [MMYOLO](https://github.com/open-mmlab/mmyolo): OpenMMLab YOLO series toolbox and benchmark.
-- [MMRotate](https://github.com/open-mmlab/mmrotate): OpenMMLab rotated object detection toolbox and benchmark.
-- [MMSegmentation](https://github.com/open-mmlab/mmsegmentation): OpenMMLab semantic segmentation toolbox and benchmark.
-- [MMOCR](https://github.com/open-mmlab/mmocr): OpenMMLab text detection, recognition, and understanding toolbox.
-- [MMPose](https://github.com/open-mmlab/mmpose): OpenMMLab pose estimation toolbox and benchmark.
-- [MMHuman3D](https://github.com/open-mmlab/mmhuman3d): OpenMMLab 3D human parametric model toolbox and benchmark.
-- [MMSelfSup](https://github.com/open-mmlab/mmselfsup): OpenMMLab self-supervised learning toolbox and benchmark.
-- [MMRazor](https://github.com/open-mmlab/mmrazor): OpenMMLab model compression toolbox and benchmark.
-- [MMFewShot](https://github.com/open-mmlab/mmfewshot): OpenMMLab fewshot learning toolbox and benchmark.
-- [MMAction2](https://github.com/open-mmlab/mmaction2): OpenMMLab's next-generation action understanding toolbox and benchmark.
-- [MMTracking](https://github.com/open-mmlab/mmtracking): OpenMMLab video perception toolbox and benchmark.
-- [MMFlow](https://github.com/open-mmlab/mmflow): OpenMMLab optical flow toolbox and benchmark.
-- [MMEditing](https://github.com/open-mmlab/mmediting): OpenMMLab image and video editing toolbox.
-- [MMGeneration](https://github.com/open-mmlab/mmgeneration): OpenMMLab image and video generative models toolbox.
-- [MMDeploy](https://github.com/open-mmlab/mmdeploy): OpenMMLab model deployment framework.
