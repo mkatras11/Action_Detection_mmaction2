@@ -22,7 +22,7 @@ git clone https://github.com/mkatras11/Action_Detection_mmaction2.git
 pip install -r requirements.txt
 ```
 
-## Supported Methods
+### Supported Methods
 
 <table style="margin-left:auto;margin-right:auto;font-size:1.3vw;padding:3px 5px;text-align:center;vertical-align:center;">
   <tr>
@@ -38,7 +38,7 @@ pip install -r requirements.txt
   <tr>
 </table>
 
-## Supported Datasets
+### Supported Datasets
 
 <table style="margin-left:auto;margin-right:auto;font-size:1.3vw;padding:3px 5px;text-align:center;vertical-align:center;">
   <tr>
