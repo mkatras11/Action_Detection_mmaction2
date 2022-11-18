@@ -54,15 +54,5 @@ pip install -r requirements.txt
 </table>
 
 ### References
-
-If you find this project useful in your research, please consider cite:
-
-```BibTeX
-@misc{2020mmaction2,
-    title={OpenMMLab's Next Generation Video Understanding Toolbox and Benchmark},
-    author={MMAction2 Contributors},
-    howpublished = {\url{https://github.com/open-mmlab/mmaction2}},
-    year={2020}
-}
-```
+* [MMAction2](https://github.com/open-mmlab/mmaction2)
 
