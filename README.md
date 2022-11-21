@@ -49,7 +49,7 @@ pip install -r requirements.txt
 
 A demo script to implement real-time spatio-temporal action detection from a web camera is provided in demo\webcam_demo_spatiotemporal_det.py.
 
-You can either run the script directly and use the default arguments or manually change them to your liking.  
+You can either run the script directly and use the default arguments, or manually change them to your liking.  
 
 ```shell
 python demo/webcam_demo_spatiotemporal_det.py \
