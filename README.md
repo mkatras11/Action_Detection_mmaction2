@@ -48,6 +48,7 @@ pip install -r requirements.txt
 ## SpatioTemporal Action Detection Webcam Demo
 
 A demo script to implement real-time spatio-temporal action detection from a web camera is provided in demo\webcam_demo_spatiotemporal_det.py.
+
 You can either run the script directly and use the default arguments or manually change them to your liking.  
 
 ```shell
@@ -73,7 +74,7 @@ python demo/webcam_demo_spatiotemporal_det.py \
 Argument description:
 
 - `SPATIOTEMPORAL_ACTION_DETECTION_CONFIG_FILE`: The spatiotemporal action detection config file path.
-- `SPATIOTEMPORAL_ACTION_DETECTION_CHECKPOINT`: The spatiotemporal action detection checkpoint path or URL.
+- `SPATIOTEMPORAL_ACTION_DETECTION_CHECKPOINT`: The spatiotemporal action detection checkpoint path or URL (You can find the URL by clicking in the ).
 - `ACTION_DETECTION_SCORE_THRESHOLD`: The score threshold for action detection.
 - `HUMAN_DETECTION_CONFIG_FILE`: The human detection config file path.
 - `HUMAN_DETECTION_CHECKPOINT`: The human detection checkpoint URL.
@@ -86,8 +87,8 @@ Argument description:
 - `--show`: Whether to show predictions with `cv2.imshow`.
 - `DISPLAY_HEIGHT`: The height of the display frame.
 - `DISPLAY_WIDTH`: The width of the display frame.
-- `PREDICT_STEPSIZE`: Make a prediction per N frames. Default: 8.
-- `CLIP_VIS_LENGTH`: The number of the draw frames for each clip. In other words, for each clip, there are at most `CLIP_VIS_LENGTH` frames to be draw around the keyframe. DEFAULT: 8.
+- `PREDICT_STEPSIZE`: Make a prediction per N frames.
+- `CLIP_VIS_LENGTH`: The number of the draw frames for each clip. In other words, for each clip, there are at most `CLIP_VIS_LENGTH` frames to be draw around the keyframe.
 
 Example:
 
